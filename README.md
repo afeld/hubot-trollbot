@@ -21,3 +21,7 @@ Then add **hubot-trollbot** to your `external-scripts.json`:
 ## Sample Interaction
 
 TODO
+
+## See Also
+
+* [hubot-business-cat](https://github.com/hubot-scripts/hubot-business-cat)
