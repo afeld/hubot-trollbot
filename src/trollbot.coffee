@@ -53,7 +53,7 @@ module.exports = (robot) ->
   robot.hear getUsingRegex('ruby|python|java'), (msg) ->
     msg.reply "You should rewrite it in Go."
 
-  robot.hear getLoverRegex('mongo(db)?|go|closure'), (msg) ->
+  robot.hear getLoverRegex('mongo(db)?|go|closure|riak'), (msg) ->
     msg.reply "Hipster."
 
   robot.hear getHaterRegex('mongo(db)?'), (msg) ->
