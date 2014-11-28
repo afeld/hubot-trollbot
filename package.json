@@ -1,8 +1,8 @@
 {
-  "name": "hubot-google-images",
-  "description": "A hubot script that interacts with the Google Images API.",
-  "version": "0.1.1",
-  "author": "Josh Nichols <technicalpickles@github.com>",
+  "name": "hubot-trollbot",
+  "description": "A hubot script that annoys your coworkers.",
+  "version": "0.1.0",
+  "author": "Aidan Feldman <aidan.feldman@gmail.com>",
   "license": "MIT",
   "keywords": [
     "hubot",
@@ -10,10 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-google-images.git"
+    "url": "git://github.com/afeld/hubot-trollbot.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-google-images/issues"
+    "url": "https://github.com/afeld/hubot-trollbot/issues"
   },
   "peerDependencies": {
     "hubot": "2.x"

@@ -4,13 +4,13 @@ chai.use require 'sinon-chai'
 
 expect = chai.expect
 
-describe 'google-images', ->
+describe 'trollbot', ->
   beforeEach ->
     @robot =
       respond: sinon.spy()
       hear: sinon.spy()
 
-    require('../src/google-images')(@robot)
+    require('../src/trollbot')(@robot)
 
   it 'registers a respond listener', ->
     expect(@robot.respond).to.have.been.calledWith(/hello/)
