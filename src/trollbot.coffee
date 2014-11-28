@@ -4,6 +4,18 @@
 # Commands:
 #   mongodb - Share the love.
 
+getLoverRegex = (term) ->
+  ///
+    (
+      love
+      | used
+      | using
+    )
+    \s+
+    #{term}
+  ///i
+
+
 getHaterRegex = (term) ->
   ///
     (
@@ -21,5 +33,8 @@ module.exports = (robot) ->
   robot.respond /hi/, (msg) ->
     msg.reply 'hello'
 
-  robot.hear getHaterRegex('mongo'), (msg) ->
-    msg.reply "But MongoDB is web scale!"
+  robot.hear getLoverRegex('mongo(db)?'), (msg) ->
+    msg.reply "Hipster."
+
+  robot.hear getHaterRegex('mongo(db)?'), (msg) ->
+    msg.reply "MongoDB is web scale!"
