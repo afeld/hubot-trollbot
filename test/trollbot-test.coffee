@@ -3,14 +3,9 @@ expect = require './expect'
 
 describe 'trollbot', ->
   beforeEach ->
-    @robot =
-      respond: sinon.spy()
-      hear: sinon.spy()
-
+    @robot = require('./testrobot')()
     require('../src/trollbot')(@robot)
 
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/hello/)
-
-  it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.calledWith(/orly/)
+  it 'replies to a hello', ->
+    @robot.sendText('Hubot: hi')
+    expect(@robot.sent).to.deep.equal(['testuser: hello'])
