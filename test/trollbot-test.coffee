@@ -9,3 +9,7 @@ describe 'trollbot', ->
   it 'replies to a hello', ->
     @robot.sendText('Hubot: hi')
     expect(@robot.sent).to.deep.equal(['testuser: hello'])
+
+  it 'hears a mention', ->
+    @robot.sendText('boy do I love MongoDB')
+    expect(@robot.sent).to.deep.equal(["testuser: MongoDB is web scale."])
