@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - "0.10"
 cache: npm
-before_install: npm install -g grunt-cli
+before_install: npm install -g coffee-script grunt-cli
