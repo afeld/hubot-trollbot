@@ -4,6 +4,24 @@
 # Commands:
 #   mongodb - Share the love.
 
+getUsingRegex = (term) ->
+  ///
+    (
+      used
+      | using
+      |
+        (
+          written
+          | wrote\s+it
+        )
+        \s+
+        in
+      |
+    )
+    \s+
+    (#{term})
+  ///i
+
 getLoverRegex = (term) ->
   ///
     (
@@ -12,9 +30,8 @@ getLoverRegex = (term) ->
       | using
     )
     \s+
-    #{term}
+    (#{term})
   ///i
-
 
 getHaterRegex = (term) ->
   ///
@@ -25,7 +42,7 @@ getHaterRegex = (term) ->
       | despise
     )
     \s+
-    #{term}
+    (#{term})
   ///i
 
 
@@ -33,7 +50,10 @@ module.exports = (robot) ->
   robot.respond /hi/, (msg) ->
     msg.reply 'hello'
 
-  robot.hear getLoverRegex('mongo(db)?'), (msg) ->
+  robot.hear getUsingRegex('ruby|python|java'), (msg) ->
+    msg.reply "You should rewrite it in Go."
+
+  robot.hear getLoverRegex('mongo(db)?|go|closure'), (msg) ->
     msg.reply "Hipster."
 
   robot.hear getHaterRegex('mongo(db)?'), (msg) ->
