@@ -24,4 +24,5 @@ TODO
 
 ## See Also
 
+* [bullshit.js](https://github.com/mourner/bullshit.js)
 * [hubot-business-cat](https://github.com/hubot-scripts/hubot-business-cat)
