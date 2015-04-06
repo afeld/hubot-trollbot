@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['Gruntfile.js', 'src/**/*', 'test/**/*.coffee'],
+      files: ['Gruntfile.js', 'scripts/**/*', 'test/**/*.coffee'],
       tasks: ['test']
     }
   });
