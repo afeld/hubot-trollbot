@@ -1,4 +1,4 @@
-# hubot-trollbot
+# hubot-trollbot [![Build Status](https://travis-ci.org/afeld/hubot-trollbot.svg?branch=master)](https://travis-ci.org/afeld/hubot-trollbot)
 
 A [hubot](https://hubot.github.com/) script that annoys your coworkers.
 
