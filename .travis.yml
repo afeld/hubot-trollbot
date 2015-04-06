@@ -3,4 +3,4 @@ node_js:
   - "0.10"
   - "0.12"
 cache: npm
-before_install: npm install -g coffee-script grunt-cli
+before_install: npm install -g grunt-cli
