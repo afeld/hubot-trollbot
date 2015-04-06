@@ -28,3 +28,13 @@ describe 'trollbot', ->
       ['testuser', "boy do I love MongoDB"],
       ['hubot', "@testuser Hipster."]
     ])
+
+  it "only recognizes full words", ->
+    @room.user.say('testuser', "using gophers")
+    @room.user.say('testuser', "using go")
+
+    expect(@room.messages).to.deep.equal([
+      ['testuser', "using gophers"],
+      ['testuser', "using go"],
+      ['hubot', "@testuser Hipster."]
+    ])

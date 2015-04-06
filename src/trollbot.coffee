@@ -19,7 +19,7 @@ getUsingRegex = (term) ->
       |
     )
     \s+
-    (#{term})
+    (#{term})\b
   ///i
 
 getLoverRegex = (term) ->
@@ -30,7 +30,7 @@ getLoverRegex = (term) ->
       | using
     )
     \s+
-    (#{term})
+    (#{term})\b
   ///i
 
 getHaterRegex = (term) ->
@@ -42,7 +42,7 @@ getHaterRegex = (term) ->
       | despise
     )
     \s+
-    (#{term})
+    (#{term})\b
   ///i
 
 
