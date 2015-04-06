@@ -1,6 +1,18 @@
 # hubot-trollbot
 
-A [hubot](https://hubot.github.com/) script that annoys your coworkers. See [`src/trollbot.coffee`](src/trollbot.coffee) for full documentation.
+A [hubot](https://hubot.github.com/) script that annoys your coworkers.
+
+> **coworker:** I can't stand Mongo.
+>
+> **hubot:** MongoDB is web scale!
+>
+> **coworker:** Well, at least the backend is written in Python.
+>
+> **hubot:** You should rewrite it in Go.
+>
+> **coworker:** We considered using Clojure.
+>
+> **hubot:** Hipster.
 
 ## Installation
 
@@ -17,10 +29,6 @@ Then add **hubot-trollbot** to your `external-scripts.json`:
   "hubot-trollbot"
 ]
 ```
-
-## Sample Interaction
-
-TODO
 
 ## See Also
 

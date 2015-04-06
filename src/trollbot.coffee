@@ -2,7 +2,7 @@
 #   A hubot script that annoys your coworkers.
 #
 # Commands:
-#   mongodb - Share the love.
+#   i love mongodb - Share the love.
 
 getUsingRegex = (term) ->
   ///
@@ -50,7 +50,7 @@ module.exports = (robot) ->
   robot.hear getUsingRegex('ruby|python|java'), (msg) ->
     msg.reply "You should rewrite it in Go."
 
-  robot.hear getLoverRegex('mongo(db)?|go|closure|riak|nosql'), (msg) ->
+  robot.hear getLoverRegex('mongo(db)?|go|clojure|riak|nosql'), (msg) ->
     msg.reply "Hipster."
 
   robot.hear getHaterRegex('mongo(db)?'), (msg) ->
