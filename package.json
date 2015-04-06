@@ -19,16 +19,16 @@
     "hubot": "2.x"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
+    "chai": "^2.2.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-test": "^0.12.4",
-    "grunt-release": "^0.7.0",
-    "hubot": "^2.9.3",
-    "hubot-test-helper": "0.0.2",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-release": "^0.12.0",
+    "hubot": "^2.12.0",
+    "hubot-test-helper": "0.0.3",
     "matchdep": "^0.3.0",
-    "mocha": "^2.0.1",
-    "sinon": "^1.12.1",
-    "sinon-chai": "^2.6.0"
+    "mocha": "^2.2.1",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
   },
   "main": "index.coffee",
   "scripts": {
