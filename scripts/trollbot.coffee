@@ -16,7 +16,6 @@ getUsingRegex = (term) ->
         )
         \s+
         in
-      |
     )
     \s+
     (#{term})\b
